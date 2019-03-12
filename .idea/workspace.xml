@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/424-替换后的最长重复字符.py">
+        <entry file="file://$PROJECT_DIR$/438-找到字符串中所有字母异位词.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="656">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -48,6 +48,7 @@
         <option value="$PROJECT_DIR$/30-串联所有单词的子串.py" />
         <option value="$PROJECT_DIR$/76-最小覆盖子串.py" />
         <option value="$PROJECT_DIR$/424-替换后的最长重复字符.py" />
+        <option value="$PROJECT_DIR$/438-找到字符串中所有字母异位词.py" />
       </list>
     </option>
   </component>
@@ -106,12 +107,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549872119837</updated>
       <workItem from="1549872121761" duration="3974000" />
-      <workItem from="1552360129943" duration="13798000" />
+      <workItem from="1552360129943" duration="20545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17772000" />
+    <option name="totallyTimeSpent" value="24519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -224,8 +225,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/424-替换后的最长重复字符.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="24">
+          <caret line="1" column="17" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/438-找到字符串中所有字母异位词.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
