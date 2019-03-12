@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c3f18fb-6e81-4fbd-baaa-d924c0869d7a" name="Default Changelist" comment="" />
+    <list default="true" id="3c3f18fb-6e81-4fbd-baaa-d924c0869d7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/438-找到字符串中所有字母异位词.py">
+        <entry file="file://$PROJECT_DIR$/567-字符串的排列.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="560">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -49,6 +51,7 @@
         <option value="$PROJECT_DIR$/76-最小覆盖子串.py" />
         <option value="$PROJECT_DIR$/424-替换后的最长重复字符.py" />
         <option value="$PROJECT_DIR$/438-找到字符串中所有字母异位词.py" />
+        <option value="$PROJECT_DIR$/567-字符串的排列.py" />
       </list>
     </option>
   </component>
@@ -107,12 +110,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549872119837</updated>
       <workItem from="1549872121761" duration="3974000" />
-      <workItem from="1552360129943" duration="20545000" />
+      <workItem from="1552360129943" duration="21600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24519000" />
+    <option name="totallyTimeSpent" value="25574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -232,8 +235,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/438-找到字符串中所有字母异位词.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="182">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/567-字符串的排列.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
