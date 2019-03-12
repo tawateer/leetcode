@@ -14,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/76-最小覆盖子串.py">
+        <entry file="file://$PROJECT_DIR$/424-替换后的最长重复字符.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="312">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/1-两数之和.py" />
         <option value="$PROJECT_DIR$/30-串联所有单词的子串.py" />
         <option value="$PROJECT_DIR$/76-最小覆盖子串.py" />
+        <option value="$PROJECT_DIR$/424-替换后的最长重复字符.py" />
       </list>
     </option>
   </component>
@@ -105,18 +106,18 @@
       <option name="presentableId" value="Default" />
       <updated>1549872119837</updated>
       <workItem from="1549872121761" duration="3974000" />
-      <workItem from="1552360129943" duration="8879000" />
+      <workItem from="1552360129943" duration="13798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12853000" />
+    <option name="totallyTimeSpent" value="17772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49937108" visible="true" weight="0.20389049" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49937108" visible="true" weight="0.19956772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Job Explorer" order="3" />
@@ -216,8 +217,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/76-最小覆盖子串.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="339">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/424-替换后的最长重复字符.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
