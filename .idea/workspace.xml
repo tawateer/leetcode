@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c3f18fb-6e81-4fbd-baaa-d924c0869d7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/1-0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-2.py" beforeDir="false" />
-    </list>
+    <list default="true" id="3c3f18fb-6e81-4fbd-baaa-d924c0869d7a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +14,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/30-串联所有单词的子串.py">
+        <entry file="file://$PROJECT_DIR$/76-最小覆盖子串.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="576">
+              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sorce</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>score</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +46,7 @@
         <option value="$PROJECT_DIR$/两数之和.py" />
         <option value="$PROJECT_DIR$/1-两数之和.py" />
         <option value="$PROJECT_DIR$/30-串联所有单词的子串.py" />
+        <option value="$PROJECT_DIR$/76-最小覆盖子串.py" />
       </list>
     </option>
   </component>
@@ -100,12 +105,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549872119837</updated>
       <workItem from="1549872121761" duration="3974000" />
-      <workItem from="1552360129943" duration="2866000" />
+      <workItem from="1552360129943" duration="8879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6840000" />
+    <option name="totallyTimeSpent" value="12853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -195,17 +200,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1-两数之和.py">
+    <entry file="file://$PROJECT_DIR$/30-串联所有单词的子串.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="270">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/30-串联所有单词的子串.py">
+    <entry file="file://$PROJECT_DIR$/1-两数之和.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state>
+          <caret column="6" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/76-最小覆盖子串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
         </state>
       </provider>
     </entry>
