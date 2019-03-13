@@ -30,10 +30,8 @@ def find(s, t):
     tmp_dict = {}
     score = 0
     i = 0
-    j = 0
-    while j < len(s):
+    for j in range(len(s)):
         if s[j] not in meta_map:
-            j += 1
             continue
 
         tmp_dict[s[j]] = tmp_dict.get(s[j], 0) + 1
@@ -58,7 +56,6 @@ def find(s, t):
 
                 tmp_dict[s[i]] = tmp_dict[s[i]] - 1
                 i += 1
-        j += 1
 
     return res
 
