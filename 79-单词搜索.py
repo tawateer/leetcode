@@ -43,7 +43,7 @@ class Solution:
                 return True
             for direction in directions:
                 ni, nj = i + direction[0], j + direction[1]
-                if ni >= 0 and ni < len(board) and nj >= 0 and nj < len(board[0]):
+                if 0 <= ni < len(board) and 0 <= nj < len(board[0]):
                     if visited[ni][nj] == 0:
                         visited[ni][nj] = 1
                         if dfs(ni, nj, board, visited, word, index + 1):
