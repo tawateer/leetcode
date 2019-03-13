@@ -69,11 +69,10 @@ class Trie(object):
         return True
 
 
-# Your Trie object will be instantiated and called as such:
-obj = Trie()
-obj.insert("abcdef")
-print obj.search("abcdef")
-print obj.search("abcde")
-print obj.startsWith("abc")
-print obj.startsWith("ab1")
-print obj.startsWith("")
+trie = Trie()
+trie.insert("apple")
+print trie.search("apple")
+print trie.search("app")
+print trie.startsWith("app")
+trie.insert("app")
+print trie.search("app")
