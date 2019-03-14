@@ -48,4 +48,3 @@ class Solution(object):
 
         r(root)
         return result
-    
