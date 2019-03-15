@@ -52,7 +52,7 @@ class Solution(object):
         if len(nums) < 3:
             return []
 
-        result = set()
+        result = []
         nums.sort()
 
         for i in range(len(nums) - 2):
@@ -62,18 +62,22 @@ class Solution(object):
 
             l = i + 1
             r = len(nums) - 1
-            while not (l == r or l > r):
+            while l < r:
                 s = nums[l] + nums[r] + nums[i]
                 if s > 0:
                     r -= 1
                 elif s < 0:
                     l += 1
                 else:
-                    result.add((nums[i], nums[l], nums[r]))
+                    result.append([nums[i], nums[l], nums[r]])
+                    while l < r and nums[l] == nums[l+1]:
+                        l += 1
+                    while l < r and nums[r] == nums[r-1]:
+                        r -= 1
                     l += 1
                     r -= 1
 
-        return map(list, result)
+        return result
 
 
 s = Solution()
