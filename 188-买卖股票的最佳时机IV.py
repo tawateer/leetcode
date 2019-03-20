@@ -46,13 +46,11 @@ class Solution(object):
         """
         import sys
 
-        if k == 0:
-            return 0
-
         n = len(prices)
         if n == 0:
             return 0
-
+        if k == 0:
+            return 0
         k = min(k, n/2)
 
         result = 0
