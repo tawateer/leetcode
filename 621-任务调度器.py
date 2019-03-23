@@ -66,3 +66,4 @@ class Solution(object):
         for count in counts:
             ans += count == longest and 1 or 0
         return max(len(tasks), ans)
+
