@@ -51,10 +51,3 @@ class Solution(object):
                     nodes.append(node.right)
             result.append(max_value)
         return result
-
-
-
-
-
-
-

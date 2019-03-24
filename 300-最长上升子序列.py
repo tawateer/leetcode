@@ -1,5 +1,5 @@
 #!/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 """
 给定一个无序的整数数组，找到其中最长上升子序列的长度。
