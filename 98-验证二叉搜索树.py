@@ -55,4 +55,7 @@ class Solution(object):
             return True
         result = []
         self.dfs(root, result)
-        return result == sorted(result)
+        for i in range(len(result)-1):
+            if result[i] >= result[i+1]:
+                return False
+        return True
