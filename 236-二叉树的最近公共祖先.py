@@ -47,6 +47,7 @@ class Solution(object):
         """
         if not root or p == root or q == root:
             return root
+
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
 
