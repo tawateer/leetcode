@@ -39,10 +39,8 @@ class Solution(object):
         dp[0] = True
         for i in nums:
             for j in range(target, 0, -1):
-                # if dp[j]:
-                #     break
                 if j >= i:
-                    dp[j] = dp[j] or dp[j - i]
+                    dp[j] = dp[j] or dp[j-i]
         return dp[-1]
 
     def canPartition2(self, nums):
