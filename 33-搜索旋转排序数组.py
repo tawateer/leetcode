@@ -34,7 +34,6 @@ class Solution(object):
             return -1
 
         low, high = 0, len(nums) - 1
-
         while low <= high:
             mid = (low + high) / 2
             if target == nums[mid]:
