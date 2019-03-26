@@ -27,17 +27,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+
         if not nums:
             return -1
-        low, high = 0, len(nums) - 1
-        mid = 0
-        while low <= high:
-            mid = (low + high) / 2
-            if nums[low] <= nums[mid]:
-                if nums[mid] <= nums[high]:
-                    return nums[low]
-                else:
-                    low = mid + 1
+        l, r = 0, len(nums) - 1
+        while l < r:
+            mid = (l + r) / 2
+            if nums[mid] < nums[r]:
+                r = mid
             else:
-                high = mid
-        return nums[mid]
+                l = mid + 1
+        return nums[l]
