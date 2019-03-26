@@ -27,10 +27,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-
         if not nums:
             return -1
-
         low, high = 0, len(nums) - 1
         mid = 0
         while low <= high:
@@ -42,5 +40,4 @@ class Solution(object):
                     low = mid + 1
             else:
                 high = mid
-
         return nums[mid]
