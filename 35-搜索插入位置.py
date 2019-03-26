@@ -27,33 +27,17 @@
 
 class Solution(object):
     def searchInsert(self, nums, target):
-        length = len(nums)
-        left = 0
-        right = length - 1
-
-        if target < nums[left]:
-            return 0
-        if target > nums[right]:
-            return right + 1
-
-        while left < right:
-            mid = (left + right) / 2
-            if nums[mid] == target:
-                return mid
-            if nums[left] == target:
-                return left
-            if nums[right] == target:
-                return right
-
-            if nums[mid] < target:
-                left = mid
+        low = 0
+        high = len(nums)
+        while low < high:
+            mid = low + (high - low)/2
             if nums[mid] > target:
-                right = mid
-
-            if left + 1 == right and nums[left] < target < nums[right]:
-                return left + 1
-
-        return left
+                high = mid
+            elif nums[mid] < target:
+                low = mid + 1
+            else:
+                return mid
+        return low
 
 
 s = Solution()
