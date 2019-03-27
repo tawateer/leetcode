@@ -23,7 +23,7 @@ class Solution(object):
             output[0], output[1] = 0, 0
             # 此时从index = 2开始遍历,output[2]==1,即表明第一个质数为2,然后将2的倍数对应的索引
             # 全部赋值为0. 此时output[3] == 1,即表明下一个质数为3,同样划去3的倍数.以此类推.
-            for i in range(2,int(n**0.5)+1):
+            for i in range(2, int(n**0.5)+1):
                 if output[i] == 1:
                     output[i*i:n:i] = [0] * len(output[i*i:n:i])
         # 最后output中的数字1表明该位置上的索引数为质数,然后求和即可.
