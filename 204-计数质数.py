@@ -21,7 +21,6 @@ class Solution(object):
             2 后面紧跟的数即为下一个质数 3, 然后把 3 所有的倍数划去.
             3 后面紧跟的数即为下一个质数 5, 再把 5 所有的倍数划去.
             以此类推.
-
         """
         if n < 3:
             return 0
@@ -64,4 +63,4 @@ class Solution(object):
 
 
 s = Solution()
-s.countPrimes(20)
+print s.countPrimes(100)
