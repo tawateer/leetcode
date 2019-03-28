@@ -14,6 +14,15 @@
 
 class Solution(object):
     def countPrimes(self, n):
+        """
+            这题搜到一个非常牛逼的算法,叫做厄拉多塞筛法.
+            比如说求 20 以内质数的个数,首先 0,1 不是质数.
+            2 是第一个质数,然后把 20 以内所有 2 的倍数划去.
+            2 后面紧跟的数即为下一个质数 3, 然后把 3 所有的倍数划去.
+            3 后面紧跟的数即为下一个质数 5, 再把 5 所有的倍数划去.
+            以此类推.
+
+        """
         if n < 3:
             return 0
         else:
@@ -52,3 +61,7 @@ class Solution(object):
                 result += 1
 
         return result
+
+
+s = Solution()
+s.countPrimes(20)
