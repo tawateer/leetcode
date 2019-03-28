@@ -36,20 +36,12 @@ class Solution:
     # @return an integer
     def reverseBits(self, n):
         result = 0
-        move = 0
-        while n:
-            b = n & 1
-            if b:
-                if result == 0:
-                    result = 1
-                else:
-                    result = (result << 1) + 1
-            else:
-                result = result << 1
-            n = n >> 1
-            move += 1
-
-        result = result << (32 - move)
+        i = 32
+        while i:
+            result <<= 1
+            result += n&1
+            n >>= 1
+            i -= 1
         return result
 
 

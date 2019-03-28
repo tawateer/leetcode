@@ -29,14 +29,15 @@
 """
 
 
-def bits(n):
-    r = 0
-    while n != 0:
-        n = n & (n - 1)
-        r += 1
-    return r
+class Solution(object):
+    def hammingWeight(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
 
-
-print bits(3)
-print bits(127)
-print bits(17)
+        r = 0
+        while n != 0:
+            n = n & (n - 1)
+            r += 1
+        return r
