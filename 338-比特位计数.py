@@ -21,16 +21,17 @@
 """
 
 
-def bits(n):
-    arr = [0]
-    if n == 0:
+class Solution(object):
+    def countBits(self, num):
+        """
+        :type num: int
+        :rtype: List[int]
+        """
+        arr = [0]
+        if num == 0:
+            return arr
+
+        for i in range(1, num+1):
+            arr.append(arr[i & i - 1] + 1)
+
         return arr
-
-    for i in range(1, n+1):
-        arr.append(arr[i & i - 1] + 1)
-
-    return arr
-
-
-print bits(2)
-print bits(5)
