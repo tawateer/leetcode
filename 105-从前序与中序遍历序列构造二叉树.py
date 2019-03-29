@@ -46,7 +46,7 @@ class Solution(object):
         如果我们要前序遍历生成二叉树的话，下一层递归应该是:
         左子树：root->left = pre_order(前序左子树范围，中序左子树范围，前序序列，中序序列);
         右子树：root->right = pre_order(前序右子树范围，中序右子树范围，前序序列，中序序列);
-        每一层递归都要返回当前根结点root.        
+        每一层递归都要返回当前根结点root.
         """
         if not inorder:
             return None
