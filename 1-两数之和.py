@@ -17,19 +17,22 @@
 """
 
 
-def f(source, target):
-    length = len(source)
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        m = {}
+        for i in xrange(len(nums)):
+            search = target - nums[i]
+            value = m.get(search, None)
+            if value is not None:
+                return [i, value]
+            m[nums[i]] = i
+        return [-1, -1]
 
-    m = {}
-    for i in xrange(length):
-        m[source[i]] = i
 
-        search = target - source[i]
-
-        value = m.get(search, None)
-        if value is not None:
-            return i, value
-    return None, None
-
-
-print f([2, 7, 11, 15], 9)
+s = Solution()
+print s.twoSum([2, 7, 11, 15], 9)
