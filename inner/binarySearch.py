@@ -10,10 +10,10 @@
 def find_index(nums, target):
     left = 0
     right = len(nums)-1
-    while left < right:
+    while left <= right:
         mid = left + ((right - left) >> 1)
         if nums[mid] > target:
-            right = mid
+            right = mid - 1
         elif nums[mid] < target:
             left = mid + 1
         else:
