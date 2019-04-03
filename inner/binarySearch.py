@@ -6,66 +6,91 @@
 """
 
 
-# 查找某个数的下标
-def find_index(nums, target):
-    left = 0
-    right = len(nums)-1
-    while left <= right:
-        mid = left + ((right - left) >> 1)
+# 查找给定值的下标(数组没有重复元素)
+def find_target_index(nums, target):
+    low = 0
+    high = len(nums)-1
+    while low <= high:
+        mid = low + ((high - low) >> 1)
         if nums[mid] > target:
-            right = mid - 1
+            high = mid - 1
         elif nums[mid] < target:
-            left = mid + 1
+            low = mid + 1
         else:
             return mid
     return -1
 
 
-print find_index([1, 2, 3, 4], 3)
-print find_index([1, 2, 2, 4], 3)
-
-
-# 查找第一个大于等于某个数的下标
-def find_first_not_less_index(nums, target):
-    left = 0
-    right = len(nums)-1
-    if target > nums[right]:
-        return -1
-    if target < nums[left]:
-        return -1
-    while left < right:
-        mid = left + ((right - left) >> 1)
-        if target <= nums[mid]:
-            right = mid
+# 查找第一个值等于给定值的下标
+def find_target_first_index(nums, target):
+    low = 0
+    high = len(nums)-1
+    while low <= high:
+        mid = low + ((high - low) >> 1)
+        if nums[mid] >= target:
+            high = mid - 1
         else:
-            left = mid + 1
-    return left
+            low = mid + 1
 
-
-print find_first_not_less_index([1, 2, 3, 4], 3)
-print find_first_not_less_index([1, 2, 3, 3, 4], 4)
-print find_first_not_less_index([1, 2, 3, 3, 4], 5)
-print find_first_not_less_index([1, 2, 3, 3, 4], 0)
-
-
-# 查找第一个大于某个数的下标
-def find_first_greater_index(nums, target):
-    left = 0
-    right = len(nums)-1
-    if target >= nums[right]:
+    if low < len(nums) and nums[low] == target:
+        return low
+    else:
         return -1
-    if target < nums[left]:
-        return left
-    while left < right:
-        mid = left + ((right - left) >> 1)
-        if target < nums[mid]:
-            right = mid
+
+
+# 查找最后一个值等于给定值的下标
+def find_target_last_index(nums, target):
+    low = 0
+    high = len(nums)-1
+    while low <= high:
+        mid = low + ((high - low) >> 1)
+        if nums[mid] > target:
+            high = mid - 1
+        elif nums[mid] < target:
+            low = mid + 1
         else:
-            left = mid + 1
-    return left
+            if (mid == len(nums)-1) or (nums[mid+1] != target):
+                return mid
+            else:
+                low = mid + 1
+    return -1
 
 
-print find_first_greater_index([1, 2, 3, 4], 3)
-print find_first_greater_index([1, 2, 3, 3, 4], 4)
-print find_first_greater_index([1, 2, 3, 3, 4], 5)
-print find_first_greater_index([1, 2, 3, 3, 4], 2)
+# 查找第一个大于等于给定值的下标
+def find_target_greater_and_equal_first_index(nums, target):
+    low = 0
+    high = len(nums)-1
+    while low <= high:
+        mid = low + ((high - low) >> 1)
+        if nums[mid] >= target:
+            if (mid == 0) or (nums[mid - 1] < target):
+                return mid
+            else:
+                high = mid - 1
+        else:
+            low = mid + 1
+    return -1
+
+
+# 查找最后一个小于等于给定值的下标
+def find_target_less_and_equal_last_index(nums, target):
+    low = 0
+    high = len(nums)-1
+    while low <= high:
+        mid = low + ((high - low) >> 1)
+        if nums[mid] > target:
+            high = mid - 1
+        else:
+            if (mid == len(nums)-1) or (nums[mid+1] > target):
+                return mid
+            else:
+                low = mid + 1
+    return -1
+
+
+if __name__ == "__main__":
+    print find_target_index([1, 2, 3, 4, 5], 4)
+    print find_target_first_index([1, 2, 3, 4, 4, 4, 5], 4)
+    print find_target_last_index([1, 2, 3, 4, 4, 4, 5], 4)
+    print find_target_greater_and_equal_first_index([1, 2, 3, 4, 4, 4, 5], 3)
+    print find_target_less_and_equal_last_index([1, 2, 3, 4, 4, 4, 5], 4)
