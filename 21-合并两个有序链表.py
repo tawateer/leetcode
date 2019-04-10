@@ -37,13 +37,9 @@ class Solution(object):
                 p.next = l2
                 l2 = l2.next
             p = p.next
-        while l1:
+        if l1:
             p.next = l1
-            l1 = l1.next
-            p = p.next
-        while l2:
+        if l2:
             p.next = l2
-            l2 = l2.next
-            p = p.next
 
         return dummy.next
