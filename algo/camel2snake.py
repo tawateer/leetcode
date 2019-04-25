@@ -13,6 +13,7 @@
 
 """
 
+
 def camel2snake(str):
     if len(str) == 0:
         return ""
@@ -22,7 +23,7 @@ def camel2snake(str):
 
     for i in range(len(str)):
         if str[i].isupper():
-            if 0<i<len(str)-2 and str[i+1].islower():
+            if 0 < i < len(str)-1 and str[i+1].islower():
                 res += "_" + str[i].lower()
             elif not pre:
                 res += "_" + str[i].lower()
