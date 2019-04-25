@@ -22,7 +22,7 @@ def replace_var(str):
 
     for i in range(len(str)):
         if str[i].isupper():
-            if 0 <i<len(str)-2 and str[i+1].islower():
+            if 0<i<len(str)-2 and str[i+1].islower():
                 res += "_" + str[i].lower()
             elif not pre:
                 res += "_" + str[i].lower()
