@@ -13,7 +13,7 @@
 
 """
 
-def replace_var(str):
+def camel2snake(str):
     if len(str) == 0:
         return ""
 
@@ -36,7 +36,7 @@ def replace_var(str):
     return res
 
 
-print replace_var("Variable")
-print replace_var("OneVariable")
-print replace_var("OneHTTPRequest")
-print replace_var("HTTPRequest")
+print camel2snake("Variable")
+print camel2snake("OneVariable")
+print camel2snake("OneHTTPRequest")
+print camel2snake("HTTPRequest")
