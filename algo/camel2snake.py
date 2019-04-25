@@ -37,6 +37,6 @@ def replace_var(str):
 
 
 print replace_var("Variable")
-print replace_var("oneVariable")
+print replace_var("OneVariable")
 print replace_var("OneHTTPRequest")
 print replace_var("HTTPRequest")
