@@ -16,6 +16,7 @@ class Solution(object):
             target ^= i
         return target
 
+
 s = Solution()
 print s.findDuplicate([1, 2, 3, 4, 4])
 print s.findDuplicate([1, 2, 2, 3, 4])
