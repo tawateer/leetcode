@@ -11,7 +11,6 @@ public class Graph { // 有向有权图的邻接表表示
   }
   public void addEdge(int s, int t, int w) { // 添加一条边
     this.adj[s].add(new Edge(s, t, w));
-
   }
   private class Edge {
     public int sid; // 边的起始顶点编号
@@ -52,11 +51,9 @@ private class PriorityQueue { // 根据 vertex.dist 构建小顶堆
 public void dijkstra(int s, int t) { // 从顶点 s 到顶点 t 的最短路径
   int[] predecessor = new int[this.v]; // 用来还原最短路径
   Vertex[] vertexes = new Vertex[this.v];
-
   for (int i = 0; i < this.v; ++i) {
     vertexes[i] = new Vertex(i, Integer.MAX_VALUE);
   }
-
   PriorityQueue queue = new PriorityQueue(this.v);// 小顶堆
   boolean[] inqueue = new boolean[this.v]; // 标记是否进入过队列
   vertexes[s].dist = 0;
@@ -90,5 +87,3 @@ private void print(int s, int t, int[] predecessor) {
   print(s, predecessor[t], predecessor);
   System.out.print("->" + t);
 }
-
-
