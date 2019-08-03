@@ -4,20 +4,16 @@ public class MatrixUDG {
     private char[] mVexs;       // 顶点集合
     private int[][] mMatrix;    // 邻接矩阵
     private static final int INF = Integer.MAX_VALUE;   // 最大值
-
-    ...
 }
 
 /*
  * floyd最短路径。
  * 即，统计图中各个顶点间的最短路径。
- *
  * 参数说明：
  *     path -- 路径。path[i][j]=k表示，"顶点i"到"顶点j"的最短路径会经过顶点k。
  *     dist -- 长度数组。即，dist[i][j]=sum表示，"顶点i"到"顶点j"的最短路径的长度是sum。
  */
 public void floyd(int[][] path, int[][] dist) {
-
     // 初始化
     for (int i = 0; i < mVexs.length; i++) {
         for (int j = 0; j < mVexs.length; j++) {
