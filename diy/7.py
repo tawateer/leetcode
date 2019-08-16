@@ -44,5 +44,6 @@ class Solution(object):
 
 x = Solution([1, 2, 3, 4])
 r = x.stack()
+print len(r)
 for i in r:
     print i
