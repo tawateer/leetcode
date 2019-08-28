@@ -47,4 +47,21 @@ class Solution(object):
         right = self.invertTree(root.right)
         root.right = left
         root.left = right
+
         return root
+
+    def invertTree2(self, root):
+        stack=[root]
+        
+        while len(stack) > 0 :
+            node = stack.pop()
+            if not node:
+                continue
+            node.left, node.right = node.right, node.left
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
+        
+        return root
+
