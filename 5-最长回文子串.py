@@ -31,8 +31,7 @@ class Solution(object):
         for i in range(length):
             dp[i][i] = 1
 
-        import sys
-        result = -sys.maxint
+        result = -1
         target = ""
         for i in range(length - 1, -1, -1):
             for j in range(i + 1, length):
