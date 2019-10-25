@@ -24,7 +24,7 @@ class Solution(object):
         :rtype: int
         """
         """
-        dp[i] 定义为以 nums[i] 结尾的最大子串的长度
+        dp[i] 定义为以 nums[i] 结尾的最大子序列的长度
         
         dp[i] 的值应该是 dp[0]...dp[i-1] 的最大值, 且 nums[0]...nums[i-1] 小于 nums[i] 时相应 dp 值要 +1
         
